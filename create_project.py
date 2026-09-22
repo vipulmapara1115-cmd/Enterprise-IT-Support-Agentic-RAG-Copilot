@@ -17,8 +17,6 @@ folders = [
     "tests",
 ]
 
-
-
 # Files to create
 files = [
     "app/main.py",
@@ -28,7 +26,6 @@ files = [
     ".env",
 ]
 
-
 # Create folders
 for folder in folders:
     (root / folder).mkdir(parents=True, exist_ok=True)
@@ -37,7 +34,5 @@ for folder in folders:
 # Create files
 for file in files:
     (root / file).touch(exist_ok=True)
-
-
 
 print("Project structure created successfully.")
